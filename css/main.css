@@ -4,15 +4,20 @@ body{
     background-color: black;
 }
 
-@font-face {
-    font-family: 'porterSans';
-    src: url('../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff'),
+footer{
+    height: 500px;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav{
     display: flex;
     justify-content: center;
+}
 
+@font-face {
+    font-family: 'porterSans';
+    src: url('../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff'),
 }
 
 .topNav{
@@ -239,114 +244,705 @@ color: rgb(240, 0, 0);
 }
 
 .upcoming{
-    background-color: #0926a5;
-    height: 1000px;
+    background-color: #3e5bdd;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .upcomingText{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .upcomingText h1{
-    font-size: 15px; m 
+    font-size: 20px; 
+    color: #7c0458;
 }
 
 .upcomingText p{
     font-size: 40px;
     color: white;
+    padding: 0;
+    width: 500px;
+    margin-top: 10px;
     font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .upcomingCard {
-    background-color: #0926a5;
     height: 100%;
+    width: auto;
     display: flex;
     justify-content: center; 
     padding-top: 60px;
     color: white;
+    justify-content: space-between 70px;
 }
 
 .upcomingMars {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%; 
     height: auto; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    overflow-wrap: break-word;
+    align-items:center;
 }
 
+.upcomingMars p{
+    padding-top: 5px;
+}
 
 .upcomingMars h1, p{
-    margin-top: 10px;
+    width: 300px;
     height: auto;
+    text-align: center;
+    padding: 0;
+
 }
 
 .upcomingNeptune {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%; 
     height: auto; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    overflow: hidden; 
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding-left: 50px;
+    align-items:center;
 }
 
+.upcomingNeptune p{
+    padding-top: 5px;
+}
 
 .upcomingNeptune h1, p{
-    margin-top: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    width: 300px;
     height: auto;
+    text-align: center;
+    padding: 0;
+
 }
 
 .upcomingJupiter {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%; 
     height: auto; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    overflow: hidden; 
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding-left: 50px;
+    align-items:center;
 }
 
+.upcomingJupiter h1{
+    height: 500px;
+}
 
 .upcomingJupiter h1, p{
-    margin-top: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    width: 300px;
     height: auto;
+    text-align: center;
+
 }
 
 .upcomingSaturn {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%; 
     height: auto; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    overflow: hidden; 
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding-left: 50px;
+    align-items:center;
 }
 
 
 .upcomingSaturn h1, p{
-    margin-top: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    height: auto;
+    height: 86px;
+}
+
+.footerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px; 
+    margin-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footerLogo{
+    max-width: 266px;
+    max-height: 48px;
+    float: left;
+    padding-top: 10px;
+}
+
+.Company h1{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.footerCompany{
+    margin: 0;
+}
+
+.footerList{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between 10px;
+}
+
+.footerList a{
+    text-decoration: none;
+}
+
+.socialMediaLinks h1{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.footerMiddle{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.footerLine{
+    width: 1500px;
+    height: 2px;
+    background-color: rgb(202, 202, 202);
+}
+
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.footerBottomRight{
+    display: flex;
+    flex-direction: row;
+}
+
+.terms{
+    padding-right: 20px;
+}
+
+.flightHeaderImg{
+    background-image: url('../assets/Images/headerbackBack.png');
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 650px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.filterSection{
+    height: 100px;
+    background-color: #7c0458;
+}
+
+.marsFlight{
+    background-color: rgb(113, 164, 223);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.marsFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.marsFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.marsFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+
+.marsFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.marsFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.marsFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(139, 139, 139);
+}
+
+.marsFlightReview img{
+    width: 150px;
+}
+
+.flightVerticalLineContainer{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.flightVerticalLine{
+    height: 30px;
+    width: 2px;
+    background-color: gray;
+}
+
+.marsFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.marsFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.qButton{
+    padding-right: 30px;
+}
+
+.quantityButton{
+    width: 200px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7c0458;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bookNowButton{
+    width: 250px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+.flightHorizontalLineContainer{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.flightHorizontalLine{
+    height: 2px;
+    width: 900px;
+    background-color: rgb(175, 175, 175);
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.marsFlightSpecs{
+    color: rgb(139, 139, 139);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.neptuneFlight{
+    background-color: rgb(161, 36, 134);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.neptuneFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.neptuneFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.neptuneFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+.neptuneFlightPrice h1{
+
+}
+
+.neptuneFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.neptuneFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.neptuneFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(129, 129, 129);
+}
+
+.neptuneFlightReview img{
+    width: 150px;
+}
+
+.neptuneFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.neptuneFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.qButton{
+    padding-right: 30px;
+}
+
+.neptuneFlightSpecs{
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.jupiterFlight{
+    background-color: rgb(209, 80, 181);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jupiterFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.jupiterFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.jupiterFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+.jupiterFlightPrice h1{
+
+}
+
+.jupiterFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.jupiterFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.jupiterFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(129, 129, 129);
+}
+
+.jupiterFlightReview img{
+    width: 150px;
+}
+
+.jupiterFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.jupiterFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.jupiterFlightSpecs{
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.saturnFlight{
+    background-color: rgb(100, 9, 80);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.saturnFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.saturnFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.saturnFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+.saturnFlightPrice h1{
+
+}
+
+.saturnFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.saturnFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.saturnFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(129, 129, 129);
+}
+
+.saturnFlightReview img{
+    width: 150px;
+}
+
+.saturnFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.saturnFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.saturnFlightSpecs{
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.uranusFlight{
+    background-color: rgb(180, 10, 143);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.uranusFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.uranusFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.uranusFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+.uranusFlightPrice h1{
+
+}
+
+.uranusFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.uranusFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.uranusFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(129, 129, 129);
+}
+
+.uranusFlightReview img{
+    width: 150px;
+}
+
+.uranusFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.uranusFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.uranusFlightSpecs{
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.moonFlight{
+    background-color: rgb(100, 37, 86);
+    padding: 100px 50px 100px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.moonFlightHeading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.moonFlightHeading h1{
+    margin: 0;
+    color: white;
+}
+
+
+.moonFlightPrice{
+    display: flex;
+    color: rgb(139, 139, 139);
+    opacity: 80%;
+}
+
+.moonFlightPrice h1{
+
+}
+
+.moonFlightPrice h2{
+    text-decoration: line-through;
+}
+
+.moonFlightReview{
+    display: flex;
+    flex-direction: row;
+}
+
+.moonFlightReview h1{
+    font-size: 18px;
+    margin: 0;
+    color: rgb(129, 129, 129);
+}
+
+.moonFlightReview img{
+    width: 150px;
+}
+
+.moonFlightText{
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.moonFlightButtons{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.moonFlightSpecs{
+    color: rgb(104, 104, 104);
+    font-size: 10px;
+    opacity: 50%;
+}
+
+.contactHeaderImg{
+    background-image: url('../assets/Images/headerbackBack.png');
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 650px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.aboutUsSection{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between 20px;
+}
+
+.infoCentre{
+    background-color: white;
+    margin-top: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smPages h1{
+    margin: 0;
+
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: column;
 }
