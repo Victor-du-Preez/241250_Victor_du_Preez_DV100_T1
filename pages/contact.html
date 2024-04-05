@@ -74,14 +74,14 @@
     </nav>
     <header>
         <div class="contactHeaderImg">
-
+            <h1>Contact Us</h1>
         </div>
     </header>
     <section class="aboutUsSection">
              <div class="aboutUsText">
                  <h1>ABOUT</h1>
                  <h2>RED PLANET VENTURES</h2>
-                 <p>Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realities. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to the diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventure. With a commitment to safety, innovation, and customer satisfaction, we strive to exceed expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures</p>
+                 Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realities. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to the diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventure. With a commitment to safety, innovation, and customer satisfaction, we strive to exceed expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures
              </div>
                  <img src="../assets/Images/contactImage.png">
     </section>
@@ -100,31 +100,32 @@
             <div class="location">
                 <h1>OR VISIT US AT OUR</h1>
                 <h2>PHYSICAL LOCATION</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.02174763524!2d28.207564839133966!3d-25.892349567324324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9566089395fa55%3A0x1d3b101567871a16!2sOpen%20Window%20Library!5e0!3m2!1sen!2sza!4v1712280792124!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapsEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.02174763524!2d28.207564839133966!3d-25.892349567324324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9566089395fa55%3A0x1d3b101567871a16!2sOpen%20Window%20Library!5e0!3m2!1sen!2sza!4v1712280792124!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="infoRight">
             <div class="contactCard">
-                <form class="form">
-                    <h1>Contact Us</h1>
-                        <div class="name">
-                            <h1>Your Name</h1>
-                            <input type="text" placeholder="Your email">
-                        </div>
-                        <div class="email">
-                            <h1>Your Email</h1>
-                            <input type="text" placeholder="Your email">
-                        </div>
-                        <div class="subject">
-                            <h1>Message Subject</h1>
-                            <input type="text" placeholder="Your email">
-                        </div>
-                        <div class="message">
-                            <h1>Your Message</h1>
-                            <textarea placeholder="Your email">
-                        </div>
-                     
-                    <button>Submit</button>
+                <h1>SEND US A MESSAGE</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <h2>Your Name</h2>
+                        <input type="text" class="contactName" name="name" required placeholder="Enter Your Name Here">
+                    </div>
+                    <div class="form-group">
+                        <h2>Email Address</h2>
+                        <input type="email" class="contactEmail" name="email" required placeholder="Enter Your Email Address Here">
+                    </div>
+                    <div class="form-group">
+                        <h2>Subject</h2>
+                        <input type="text" class="contactSubject" name="subject" required placeholder="Subject of your Message">
+                    </div>
+                    <div class="form-group">
+                        <h2>Message</h2>
+                        <textarea class="contactMessage" name="message" required placeholder="Type your Message Here"></textarea>
+                    </div>
+                    <div class="submitButton">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -142,9 +143,9 @@
                     </h1>
                 </div>
                 <div class="footerList">
-                    <a class="active" href="index.html">Home</a>
-                    <a href="pages/flight.html">Flights</a>
-                    <a href="pages/contact.html">Contact Us</a>
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/flight.html">Flights</a>
+                    <a href="../pages/contact.html">Contact Us</a>
                 </div>
             </div>
             <div class="footerSocialMedia">

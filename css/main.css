@@ -135,22 +135,26 @@ color: rgb(240, 0, 0);
     position: relative;
     margin: 0;
     padding: 0;
-    display: flex;
     min-height: 100vh;
     justify-content: flex-start;
     align-items: flex-end;
+    display: flex;
+}
+
+.headerImgText{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .headerImg h1 {
     width: 500px;
-    padding-left: 50px;
     font-family: 'porterSans', sans-serif;
     color: #D92627;
+    padding-left: 180px;
 }
     
 .headerImg p{
     width: 750px;
-    padding-left: 50px;
     padding-bottom: 20px;
     font-family: 'porterSans', sans-serif;
     color: #0926a5;
@@ -166,7 +170,15 @@ color: rgb(240, 0, 0);
 }
 
 .tripsText{
-    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0;
+    color: white;
+    font-size: 18;
 }
 
 .tripsImg{
@@ -177,39 +189,51 @@ color: rgb(240, 0, 0);
 
 .featuredTrips h1{
     color: #7c0458;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0;
 }
 
 .featuredTrips h2{
     color: white;
     font-size: 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
 }
 
-.featuredTrips p{
-    color: white;
-    font-size: 18px;
-}
 
-.featuredTrips h1, h2, p{
-    width: 400px;
-    padding-left: 100px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    word-wrap: break-word;
+.btnContainer{
+    padding-top: 100px;
 }
 
 .featuredBtn{
-    margin-left: 100px;
-    padding: 10px 40px 10px 40px;
-    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
     background-color: red;
-    border-color: red;
-    color: white;
+    border-radius: 10px;
     font-weight: 600;
-    font-size: 15px;
+    color: white;
+    box-shadow: 0 0 0 2px #fc6f6f20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
+  
+  
+.featuredBtn:hover {
+    box-shadow: 0 0 0 5px #bd202060;
+}
+  
 
-.featuredBtn:hover{
-    background-color: rgb(252, 32, 32);
+.featuredBtn:active {
+    scale: 0.95;
 }
 
 .ourShuttles{
@@ -219,6 +243,14 @@ color: rgb(240, 0, 0);
     align-items: center;
 }
 
+.shuttlesText{
+    width: 500px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
 .shuttlesImg{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -226,12 +258,16 @@ color: rgb(240, 0, 0);
 }
 
 .ourShuttles h1{
-    font-size: 18px;
+    font-size: 16px;
     color: #7c0458;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .ourShuttles h2{
     color: white;
+    padding: 0;
+    margin-top: 0;
 }
 
 .ourShuttles p{
@@ -239,7 +275,6 @@ color: rgb(240, 0, 0);
 }
 
 .ourShuttles h1, h2, p{
-    padding-left: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -258,12 +293,12 @@ color: rgb(240, 0, 0);
 }
 
 .upcomingText h1{
-    font-size: 20px; 
+    font-size: 16px; 
     color: #7c0458;
 }
 
 .upcomingText p{
-    font-size: 40px;
+    font-size: 32px;
     color: white;
     padding: 0;
     width: 500px;
@@ -293,7 +328,7 @@ color: rgb(240, 0, 0);
 }
 
 .upcomingMars p{
-    padding-top: 5px;
+    margin: 0;
 }
 
 .upcomingMars h1, p{
@@ -315,7 +350,7 @@ color: rgb(240, 0, 0);
 }
 
 .upcomingNeptune p{
-    padding-top: 5px;
+    margin: 0;
 }
 
 .upcomingNeptune h1, p{
@@ -340,6 +375,10 @@ color: rgb(240, 0, 0);
     height: 500px;
 }
 
+.upcomingJupiter p{
+    margin: 0;
+}
+
 .upcomingJupiter h1, p{
     width: 300px;
     height: auto;
@@ -357,6 +396,9 @@ color: rgb(240, 0, 0);
     align-items:center;
 }
 
+.upcomingSaturn p{
+    margin: 0;
+}
 
 .upcomingSaturn h1, p{
     height: 86px;
@@ -379,6 +421,12 @@ color: rgb(240, 0, 0);
     padding-top: 10px;
 }
 
+.footerLogo p{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+}
+
 .Company h1{
     margin: 0;
     padding-bottom: 20px;
@@ -397,6 +445,10 @@ color: rgb(240, 0, 0);
 
 .footerList a{
     text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    color: gray;
 }
 
 .socialMediaLinks h1{
@@ -421,6 +473,7 @@ color: rgb(240, 0, 0);
     justify-content: space-between;
     margin-left: 200px;
     margin-right: 200px;
+    color: gray;
 }
 
 .footerBottomRight{
@@ -439,17 +492,103 @@ color: rgb(240, 0, 0);
     padding: 0;
     display: flex;
     min-height: 650px;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.flightHeaderImg h1{
+    font-family: 'porterSans', sans-serif;
+    font-size: 60px;
+    color: rgb(233, 184, 226);
+    stroke: #ffffff;
+    stroke-width: 10px;
 }
 
 .filterSection{
-    height: 100px;
-    background-color: #7c0458;
+    height: 75px;
+    width: 100%;
+    background-color: #612580;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.filterSection h1 h2{
+    margin-top: 0;
+}
+
+.filterLeft{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.filterLeft p{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(202, 202, 202);
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+
+.filterLeft img{
+    height: 20px;
+    padding-right: 10px;
+    fill: white;
+}
+
+.filterRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.filterRight h1{
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.showCounter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 10px;
+    color: #4d2c6d;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sortByCounter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 10px;
+    color: #4d2c6d;
+    font-weight: 700;
+}
+
+.vertLine{
+    width: 2px;
+    height: 50px;
+    background-color: gray;
+}
 .marsFlight{
-    background-color: rgb(113, 164, 223);
+    background-color: #9842ad;
     padding: 100px 50px 100px 150px;
     display: flex;
     flex-direction: row;
@@ -470,13 +609,14 @@ color: rgb(240, 0, 0);
 
 .marsFlightPrice{
     display: flex;
-    color: rgb(139, 139, 139);
+    color: rgb(207, 207, 207);
     opacity: 80%;
 }
 
 
 .marsFlightPrice h2{
     text-decoration: line-through;
+    padding-left: 100px;
 }
 
 .marsFlightReview{
@@ -487,7 +627,7 @@ color: rgb(240, 0, 0);
 .marsFlightReview h1{
     font-size: 18px;
     margin: 0;
-    color: rgb(139, 139, 139);
+    color: rgb(207, 207, 207);
 }
 
 .marsFlightReview img{
@@ -523,25 +663,63 @@ color: rgb(240, 0, 0);
 }
 
 .quantityButton{
-    width: 200px;
+    width: 150px;
     height: 75px;
     border: none;
     border-radius: 10px;
     background-color: #7c0458;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(201, 201, 201);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.qPlus{
+    padding-right: 20px;
+}
+
+.qMinus{
+    padding-left: 20px;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.qNumber{
+    font-size: 20px;
 }
 
 .bookNowButton{
     width: 250px;
     height: 75px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
     border: none;
-    border-radius: 10px;
+    font-size: 16px;
     background-color: red;
+    border-radius: 10px;
+    font-weight: 600;
     color: white;
-    font-size: 18px;
+    box-shadow: 0 0 0 2px #fc6f6f20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
+  
+  
+.bookNowButton:hover {
+    box-shadow: 0 0 0 5px #bd202060;
+}
+  
+
+.bookNowButton:active {
+    scale: 0.95;
+}
+  
+  
 .flightHorizontalLineContainer{
     width: 100%;
     padding-bottom: 30px;
@@ -557,9 +735,9 @@ color: rgb(240, 0, 0);
 }
 
 .marsFlightSpecs{
-    color: rgb(139, 139, 139);
+    color: rgb(207, 207, 207);
     font-size: 10px;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .neptuneFlight{
@@ -586,10 +764,6 @@ color: rgb(240, 0, 0);
     display: flex;
     color: rgb(139, 139, 139);
     opacity: 80%;
-}
-
-.neptuneFlightPrice h1{
-
 }
 
 .neptuneFlightPrice h2{
@@ -630,7 +804,7 @@ color: rgb(240, 0, 0);
 }
 
 .neptuneFlightSpecs{
-    color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207));
     font-size: 10px;
     opacity: 50%;
 }
@@ -699,7 +873,7 @@ color: rgb(240, 0, 0);
 }
 
 .jupiterFlightSpecs{
-    color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207);
     font-size: 10px;
     opacity: 50%;
 }
@@ -768,7 +942,7 @@ color: rgb(240, 0, 0);
 }
 
 .saturnFlightSpecs{
-    color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207);
     font-size: 10px;
     opacity: 50%;
 }
@@ -837,7 +1011,7 @@ color: rgb(240, 0, 0);
 }
 
 .uranusFlightSpecs{
-    color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207);
     font-size: 10px;
     opacity: 50%;
 }
@@ -906,7 +1080,7 @@ color: rgb(240, 0, 0);
 }
 
 .moonFlightSpecs{
-    color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207);
     font-size: 10px;
     opacity: 50%;
 }
@@ -918,16 +1092,48 @@ color: rgb(240, 0, 0);
     padding: 0;
     display: flex;
     min-height: 650px;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+.contactHeaderImg{
+font-family: 'porterSans', sans-serif;
+font-size: 50px;
+color: rgb(233, 184, 226);
+stroke: #ffffff;
+stroke-width: 10px;
 }
 
 .aboutUsSection{
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between 20px;
+    justify-content: flex-end;
+    padding-top: 70px;
+    padding-right: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.aboutUsText{
+    width: 700px;
+    height: 400px;
+    padding-right: 470px;
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.aboutUsText h1{
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #3e5bdd;
+}
+
+.aboutUsText h2{
+    margin-top: 0px;
+    font-size: 50px;
+    color: #7c0458;
+}
+
 
 .infoCentre{
     background-color: white;
@@ -942,7 +1148,138 @@ color: rgb(240, 0, 0);
 
 }
 
+.infoRight{
+    padding-right: 100px;
+}
 .contactCard{
     display: flex;
     flex-direction: column;
+    background-color: #4d2c6d;
+    background-image: url(../assets/Images/formBack.png);
+    width: 500px;
+    height: 670px;
+    border-radius: 20px;
+    align-items: center;
+    padding-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactCard h1{
+    font-size: 30px;
+    color: white;
+}
+
+.contactCard h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.contactName{
+    border-radius: 10px;
+    stroke: none;
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding-left: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactEmail{
+    border-radius: 10px;
+    stroke: none;
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding-left: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactSubject{
+    border-radius: 10px;
+    stroke: none;
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding-left: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contactMessage{
+    border-radius: 10px;
+    stroke: none;
+    border: none;
+    width: 300px;
+    height: 100px;
+    resize: none;
+    padding-left: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.submitButton{
+    padding-top: 20px;
+}
+
+.btn-submit{
+    width: 250px;
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px #fc6f6f20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+  
+.btn-submit:hover {
+    box-shadow: 0 0 0 5px #bd202060;
+}
+  
+
+.btn-submit:active {
+    scale: 0.95;
+}
+
+.infoLeft{
+    padding-left: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.smPages h1{
+    font-size: 18px;
+    padding-bottom: 0px;
+    color: #3e5bdd;
+}
+.smPages h2{
+    font-size: 40px;
+    margin-top: 0px;
+    color: #7c0458;
+}
+
+.smPages{
+    padding-bottom: 100px;
+}
+
+.location h1{
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: #3e5bdd;
+}
+
+.location h2{
+    font-size: 40px;
+    margin-top: 0px;
+    color: #7c0458;
+}
+
+.mapsEmbed{
+    border-radius: 20px;
 }
