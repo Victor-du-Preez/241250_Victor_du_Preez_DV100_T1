@@ -1095,9 +1095,9 @@ color: rgb(240, 0, 0);
     justify-content: center;
     align-items: center;
 }
-.contactHeaderImg{
+.contactHeaderImg h1{
 font-family: 'porterSans', sans-serif;
-font-size: 50px;
+font-size: 60px;
 color: rgb(233, 184, 226);
 stroke: #ffffff;
 stroke-width: 10px;
