@@ -152,13 +152,19 @@ color: rgb(240, 0, 0);
     color: #D92627;
     padding-left: 180px;
 }
+
+.headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     
 .headerImg p{
     width: 750px;
     padding-bottom: 20px;
     font-family: 'porterSans', sans-serif;
     color: #0926a5;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 
