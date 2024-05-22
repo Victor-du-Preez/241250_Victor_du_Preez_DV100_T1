@@ -674,6 +674,34 @@ color: rgb(240, 0, 0);
 
 .qButton{
     padding-right: 30px;
+    display: flex;
+}
+
+#counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.decreaseButton{
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+}
+
+.increaseButton{
+    background: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    float: right;
+    padding-top: 5px;
 }
 
 .quantityButton{
@@ -682,10 +710,6 @@ color: rgb(240, 0, 0);
     border: none;
     border-radius: 10px;
     background-color: #7c0458;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     font-size: 30px;
     color: rgb(201, 201, 201);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
